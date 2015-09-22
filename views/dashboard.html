@@ -1,0 +1,69 @@
+<div id="theme-wrapper">
+	<header class="navbar" id="header-navbar" style="position: fixed; width: 100%; z-index: 999;">
+		<div class="container">
+			<a ui-sref="dashboard" id="logo" class="navbar-brand">
+				<img src="../assets/img/logo.png" alt="" class="normal-logo logo-white"/>
+				<img src="../assets/img/logo-black.png" alt="" class="normal-logo logo-black"/>
+				<img src="../assets/img/logo-small.png" alt="" class="small-logo hidden-xs hidden-sm hidden"/>
+			</a>
+			<div class="clearfix">
+				<button class="navbar-toggle" data-target=".navbar-ex1-collapse" data-toggle="collapse" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<div class="nav-no-collapse pull-right" id="header-nav">
+					<ul class="nav navbar-nav pull-right">
+						<li class="hidden-xxs">
+							<a class="btn" ng-click="dashboard.logout()">
+								<i class="fa fa-power-off"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="page-wrapper" class="container">
+		<div class="row">
+			<div id="nav-col" style="position: fixed; top: 50px; height: 100vh;">
+				<section id="col-left" class="col-left-nano">
+					<div id="col-left-inner" class="col-left-nano-content">
+						<div id="user-left-box" class="clearfix hidden-sm hidden-xs dropdown profile2-dropdown">
+							<img alt="" src="../assets/img/samples/scarlet-159.png"/>
+							<div class="user-box">
+								<span class="name">
+									Scarlett J.
+								</span>
+								<span class="status">
+									<i class="fa fa-circle"></i> Online
+								</span>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
+							<ul class="nav nav-pills nav-stacked">
+								<li class="nav-header nav-header-first hidden-sm hidden-xs">
+									Navigation
+								</li>
+								<li>
+									<a ui-sref=".jobs">
+										<i class="fa fa-dashboard"></i>
+										<span>Tareas</span>
+									</a>
+								</li>
+								<li>
+									<a ui-sref=".contactos">
+										<i class="fa fa-table"></i>
+										<span>Contactos</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div id="content-wrapper" style="top: 50px;">
+				<div ui-view></div>
+			</div>
+		</div>
+	</div>
+</div>

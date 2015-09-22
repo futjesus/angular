@@ -1,0 +1,38 @@
+<div id="login-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="login-box">
+					<div id="login-box-holder">
+						<div class="row">
+							<div class="col-xs-12">
+								<header id="login-header">
+									<div id="login-logo">
+										<img src="../assets/img/logo.png" alt=""/>
+									</div>
+								</header>
+								<div id="login-box-inner">
+									<form role="form">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-user"></i></span>
+											<input class="form-control" type="text" placeholder="Email address" ng-model="auth.loginData.userName">
+										</div>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="fa fa-key"></i></span>
+											<input type="password" class="form-control" placeholder="Password" ng-model="auth.loginData.password">
+										</div>
+									</form>
+									<div class="row">
+										<div class="col-xs-12">
+											<button type="submit" class="btn btn-success col-xs-12" ng-click="auth.doLogin()">Login</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
